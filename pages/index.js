@@ -125,8 +125,8 @@ export default function Home() {
          * Execute the actual coffee gift from your smart contract
          */
         const coffeeTxn = await coffeePortalContract.buyCoffee(
-          message ? message : "None",
-          name ? name : "None",
+          message ? message : "Enjoy Your Coffee",
+          name ? name : "Anonymous",
           ethers.utils.parseEther("0.001"),
           {
             gasLimit: 300000,
@@ -134,7 +134,7 @@ export default function Home() {
         );
         console.log("Mining...", coffeeTxn.hash);
 
-        toast.info("Mining...", {
+        toast.info("Sending Fund...", {
           position: "top-left",
           autoClose: 18050,
           hideProgressBar: false,
@@ -150,6 +150,16 @@ export default function Home() {
         count = await coffeePortalContract.getTotalCoffee();
 
         console.log("Retrieved total coffee count...", count.toNumber());
+
+        toast.success("Coffee Purchased!", {
+          position: "top-left",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       } else {
         console.log("Ethereum object doesn't exist!");
       }
