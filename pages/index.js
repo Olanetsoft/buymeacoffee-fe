@@ -151,6 +151,9 @@ export default function Home() {
 
         console.log("Retrieved total coffee count...", count.toNumber());
 
+        setMessage("");
+        setName("");
+
         toast.success("Coffee Purchased!", {
           position: "top-left",
           autoClose: 5000,
