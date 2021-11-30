@@ -10,7 +10,7 @@ export default function Home() {
   /**
    * Create a variable here that holds the contract address after you deploy!
    */
-  const contractAddress = "0xBe26E2673787FF9EAbB6F9648BDc479FE2f162fc";
+  const contractAddress = "0x62c6749A62401760A8b767AA487B7c0eCA8E4E2C";
 
   /**
    * Create a variable here that references the abi content!
@@ -134,7 +134,7 @@ export default function Home() {
         );
         console.log("Mining...", coffeeTxn.hash);
 
-        toast.info("Sending Fund...", {
+        toast.info("Sending Fund for coffee...", {
           position: "top-left",
           autoClose: 18050,
           hideProgressBar: false,
