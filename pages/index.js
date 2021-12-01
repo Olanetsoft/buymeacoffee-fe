@@ -27,7 +27,7 @@ export default function Home() {
   const [name, setName] = useState("");
 
   /*
-   * All state property to store all waves
+   * All state property to store the coffee data.
    */
   const [allCoffee, setAllCoffee] = useState([]);
 
@@ -180,7 +180,7 @@ export default function Home() {
   };
 
   /*
-   * Create a method that gets all waves from your contract
+   * Create a method that gets all coffee from your contract
    */
   const getAllCoffee = async () => {
     try {
