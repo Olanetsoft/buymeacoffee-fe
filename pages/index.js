@@ -341,8 +341,8 @@ export default function Home() {
         ) : (
           <div>
             <p className="text-2xl text-blue-600 mb-6">
-              You can switch your wallet to Rinkeby Testnet Network to test out
-              the application.
+              You can switch your wallet to Rinkeby Testnet Network to test this
+              application.
             </p>
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-full mt-3"
