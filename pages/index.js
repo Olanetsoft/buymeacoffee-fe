@@ -284,6 +284,7 @@ export default function Home() {
         <h1 className="text-6xl font-bold text-blue-600 mb-6">
           Buy Me A Coffee
         </h1>
+
         {/*
          * If there is currentAccount render this form, else render a button to connect wallet
          */}
@@ -338,12 +339,18 @@ export default function Home() {
             </form>
           </div>
         ) : (
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-full mt-3"
-            onClick={connectWallet}
-          >
-            Connect Your Wallet
-          </button>
+          <div>
+            <p className="text-2xl text-blue-600 mb-6">
+              You can switch your wallet to Rinkeby Testnet Network to test out
+              the application.
+            </p>
+            <button
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-full mt-3"
+              onClick={connectWallet}
+            >
+              Connect Your Wallet
+            </button>
+          </div>
         )}
 
         {allCoffee.map((coffee, index) => {
